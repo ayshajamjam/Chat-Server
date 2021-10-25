@@ -1,11 +1,4 @@
 # Programming Assignment 4: Chatty Chat Chat
-## COSC 150 - Advanced Programming
-
-- [Goals](#goals)
-- [Description](#description)
-- [Specification and requirements](#specification-and-requirements)
-- [Provided files](#provided-files)
-- [Grading rubric](#grading-rubric)
 
 ## Goals
 
@@ -119,34 +112,3 @@ You will also create the following Java source code files and commit them to you
 - `ChattyChatChatServer.java`, which contains a `main()` method and serves as the program to run on the server.
 - `ChattyChatChatClient.java`, which contains a `main()` method and serves as the program to run on the clients.
 You should also commit any additional `.java` source files which support the two above (this will depend on your implementation of the programs).      
-
-## Provided files
-
-The following files related to project logistics are present in your repository:
-- `README.md` which provides this specification.
-- `.gitignore` which specifies files git should NOT track.
-- `.travis.yml` which provides instructions to trigger Travis testing.
-- `travis` a directory containing the testing scripts.
-
-You should not modify *any* of these files while working on your project; doing so may break Travis such that a test build does not run, or gives false/misleading feedback about your code.
-
-## Grading rubric
-
-Your score for this assignment is determined according to the following rubric.
-
-Amazing Feat | Points Awarded | Tested by TravisCI?
----          | :---:          | ---:
-Your repository contains `ChattyChatChatServer.java` and `ChattyChatChatClient.java`.                                                                     | 20 | Yes
-All source code in your repository compiles.                         | 20 | Yes
-Your server starts, binds, and accepts a single connection.          | 10 | Yes
-Your server starts, binds, and accepts multiple connections.         | 20 | Yes
-One client instance starts and successfully connects to the server.  | 10 | Yes
-Two clients can connect to the server and a message passes from one client to the other.                                                               | 20 | Yes
-Many clients can connect to the server and a message passes from one client to all other clients.                                                       | 20 | Yes
-The `/quit` command correctly disconnects a single client.           | 10 | Yes
-The `/dm` command works correctly when no users have the nickname.   | 10 | Yes
-The `/dm` command works correctly when one user has the nickname.    | 10 | Yes
-The `/dm` command works correctly when multiple users have the nickname.                                                                     | 10 | Yes
-Your source code uses consistent style, reasonable method/variable names, and is documented clearly.                                                  | 20 | *No*
-**Total points**                                                    | 180 |
-*Total TravisCI points*                                           | *160* |  
